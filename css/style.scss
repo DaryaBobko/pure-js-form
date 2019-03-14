@@ -1,0 +1,188 @@
+body {
+  box-sizing: border-box;
+  padding: 64px 64px 48px;
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+p {
+  font-size: 16px;
+  color: #333333;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+// .msf_hide {
+//   display: none;
+// }
+
+// .msf_show {
+//   display: block;
+// }
+
+.form-wrapper {
+  min-height: 576px;
+  border: 1px solid #FF6E20;
+  border-radius: 0 0 50px 0;
+  display: flex;
+  width: 100%
+}
+
+.content,
+.form {
+  width: 50%
+}
+
+.content {
+  background-image: url('../resources/step1.jpg');
+  background-size: cover;
+  background-color: #FF6E20;
+  background-position: 50% 0px;
+}
+
+.general-title {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 32px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 96px auto;
+}
+
+.form {
+  box-sizing: border-box;
+  padding: 80px 72px 88px;
+  >.custom-input:first-child {
+    margin-top: 0;
+  } 
+}
+
+.custom-input {
+  height: 40px;
+  width: 100%;
+  padding: 0 16px;
+  margin: 16px 0;
+  background-color: #FFB78F;
+  border: 2px solid #FFB78F;
+  font-size: 16px;
+  color: #333333;
+  &:focus {
+    background-color: #FFB78F;
+    border: 2px solid #FE6E20;
+    outline: none;
+  }
+}
+
+.wrapper-radio {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0;
+  >p {
+    width: 50%;
+  }
+}
+
+.custom-radio {
+  height: 24px;
+  width: 24px;
+  margin: 12px 20px 12px 0;
+}
+
+.custom-checkbox {
+  height: 16px;
+  width: 16px;
+  margin: 0 16px 0 0;
+}
+
+.custom-button {
+  width: 100%;
+  color: #ffffff;
+  background: #FF6E20;
+  border: 2px solid #FF6E20;
+  height: 56px;
+  outline: none;
+  font-weight: 900;
+  font-size: 24px;
+  margin-top: 24px;
+}
+
+.arrow {
+  margin: 0 16px;
+  color: black;
+}
+
+.wrapper-button {
+  margin-top: 32px;
+  >.custom-button:first-child {
+    margin-bottom: 32px;
+  }
+}
+
+.title {
+  padding-top: 80px;
+  font-size: 24px;
+  margin: 0;
+}
+
+.subtitle {
+  margin: 8px 0 24px;
+  font-size: 16px;
+}
+
+.title, .subtitle {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  text-align: center;
+  color: #000000;
+}
+
+.step2 {
+  border: 1px solid #D47C01;
+  .content {
+    background-image: url('../resources/step2.jpg');
+    background-color: #D47C01;
+  }
+  .custom-input {
+    background-color: #EBBD80;
+    border: 2px solid #EBBD80;
+    &:focus {
+      background-color: #EBBD80;
+      border: 2px solid #D77B00;
+    }
+  }
+  .custom-button {
+    background: #D77B00;
+    border: 2px solid #D77B00;
+  }
+}
+
+.step3 {
+  border: 1px solid #E93A29;
+  .content {
+    background-image: url('../resources/step3.jpg');
+    background-color: #E93A29;
+    background-position: 50% 70%;
+  }
+  .custom-input {
+    background-color: #F39B93;
+    border: 2px solid #F39B93;
+    &:focus {
+      background-color: #F39B93;
+      border: 2px solid #E93A29;
+    }
+  }
+  .custom-button {
+    background: #E93A29;
+    border: 2px solid #E93A29;
+  }
+}

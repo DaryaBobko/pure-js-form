@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Registration form</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- <link rel="icon" type="image/png" href="http://fountainjs.io/assets/imgs/fountain.png" /> -->
+    <link href="./dist/style.css" rel="stylesheet">
+      <!-- <script src="/glob.bundle.js"></script> -->
+  </head>
+  <body>
+    <fieldset class="msf_hide">
+      <div class="form-wrapper">
+        <div class="content">
+          <h1 class="general-title">Всего три простых шага <br/>для получения бонусов!</h1>
+        </div>
+        <form class="form">
+          <input placeholder="Фамилия" required class="custom-input" />
+          <input placeholder="Имя" required class="custom-input" />
+          <input placeholder="Отчество" required class="custom-input" />
+          <div class="wrapper-radio">
+            <p><input type="radio" name="Mужчина" class="custom-radio">Mужчина</p>
+            <p><input type="radio" name="Женщина" class="custom-radio">Женщина</p>
+          </div>
+          <input placeholder="Дата рождения" required class="custom-input" />
+          <p><input type="checkbox" name="agreement" value="agree" class="custom-checkbox">Соглашаюсь с условиями участия</p>
+          <button name="next" value="Next"  onclick="msf_btn_next()" class="custom-button">Продолжить<label class="arrow">→</label></button>
+        </form>
+      </div>
+    </fieldset>
+    <fieldset class="msf_hide">
+      <div class="form-wrapper step2">
+        <div class="content">
+          <h1 class="general-title">Половина пути уже<br/> пройдена</h1>
+        </div>
+        <form class="form">
+          <input placeholder="Телефон" required class="custom-input" />
+          <input placeholder="Email" required class="custom-input" />
+          <input placeholder="Пароль" required class="custom-input" />
+          <input placeholder="Повторить пароль" required class="custom-input" />
+          <div class="wrapper-button">
+            <button name="back" value="Back" onclick="msf_btn_back()" class="custom-button"><label class="arrow">←</label>Назад</button>
+            <button name="next" value="Next" onclick="msf_btn_next()" class="custom-button">Продолжить<label class="arrow">→</label></button>
+          </div>
+        </form>
+      </div>
+    </fieldset>
+    <fieldset class="msf_hide">
+        <div class="form-wrapper step3">
+          <div class="content">
+            <h1 class="general-title">Осталось совсем<br/> чуть-чуть</h1>
+          </div>
+          <form class="form">
+            <h4 class="title">На номер <strong>+375293334455</strong><br/>отправлен код подтверждения</h4>
+            <p class="subtitle">Введите его в поле ниже</p>
+            <input placeholder="Код" required class="custom-input" />
+            <button name="join" class="custom-button">Присоединися</button>
+          </form>
+        </div>
+      </fieldset>
+      <!-- <script src="script.js"></script> -->
+  </body>
+</html>

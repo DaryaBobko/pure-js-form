@@ -1,0 +1,17 @@
+{
+  "name": "darya",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "jquery": "3.2.1",
+    "node-sass": "^4.11.0"
+  }
+}
